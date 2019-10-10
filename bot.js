@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 const dicebag = require('dicewerx');
 
-const { token } = require('./auth.json');
+const { token } = process.env.discord_token;
 
 bot.login(token);
 
